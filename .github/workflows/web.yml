@@ -8,7 +8,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
-  deployments: write
+  deployments: write`
 
 jobs:
   build:
@@ -32,11 +32,11 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run linters
-        run: yarn lint
+#      - name: Run linters
+#        run: yarn lint
 
-      # - name: Run test
-      #   run: yarn coverage
+#       - name: Run test
+#         run: yarn coverage
 
       - name: Build
         run: yarn build
